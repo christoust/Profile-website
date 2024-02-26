@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/style.css">
+<body>
+    <form class="login">
+        <h2>Welcome, User!</h2>
+        <p>Please log in</p>
+        <input type="text" id="username" name="username" placeholder="User Name" required title="Please enter username"  oninput="validateForm()"  />
+        <input type="password" id="pass" name="pass" placeholder="Password" required title="Please enter password"  oninput="validateForm()"/>
+        <input type="submit" id="submitBtn"  value="Log In"  disabled />
+        <div class="links">
+          <a href="landingPages/registration.html">Don't have an account</a>
+        </div>
+      </form>
+      <script src="Scripts/login.js"></script>
+
+      
+      
+    
+</body>
+</html>

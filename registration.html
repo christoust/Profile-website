@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../Styles/formStyle.css" />
+
+    <!-- <nav>
+      <ul>
+        <li class="login"><a href="../index.html">Login</a></li>
+      </ul>
+    </nav> -->
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>Sign Up</h1>
+      <form action="">
+        <label for="username">User Name:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your User name"
+          required
+        />
+        <label for="first">First Name:</label>
+        <input
+          type="text"
+          id="first"
+          name="first"
+          placeholder="Enter your first name"
+          required
+        />
+        <label for="last">Last Name:</label>
+
+        <input
+          type="text"
+          id="last"
+          name="last"
+          placeholder="Enter your last name"
+          required
+        />
+
+        <label for="dob">Date of Birth:</label>
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          placeholder="Enter your DOB"
+          required
+        />
+
+        <label>Gender:</label>
+        <div class="gender-options">
+          <label>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              required
+            />Male
+          </label>
+          <label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              required
+            />Female
+          </label>
+          <label>
+            <input
+              type="radio"
+              id="other"
+              name="gender"
+              value="other"
+              required
+            />Other
+          </label>
+        </div>
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$"
+          required
+          title="Password must contain at least one number, 
+					one alphabet, one symbol, and be at 
+					least 8 characters long"
+        />
+
+        <label for="repassword">Re-type Password:</label>
+        <input
+          type="password"
+          id="repassword"
+          name="repassword"
+          placeholder="Re-Enter your password"
+          required
+        />
+        <span id="pass"></span>
+
+        <div class="wrap">
+          <button type="submit" onclick="solve()">Submit</button>
+        </div>
+      </form>
+	  <div class="links">
+		<a href="../index.html">Already have an account?</a>
+	  </div>
+    </div>
+	
+    <script src="../Scripts/formScript.js"></script>
+  </body>
+</html>

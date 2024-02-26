@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(120deg, #007bff, #d0314c);
+  font-family: Raleway, sans-serif;
+  color: #666;
+  
+}
+
+input:invalid + span::after {
+  content: attr(title);
+  background-color: #f44336;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#field { 
+  color: red; 
+  font-size: 12px; 
+} 
+
+.regform {
+  display: flex;
+}
+
+.login {
+  margin: 20px auto;
+  padding: 40px 50px;
+  max-width: 300px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 1px 1px 1px #666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 29vw;
+  background: white;
+  border-radius: 10px;
+}
+.login input {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 14px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  font-family: Raleway, sans-serif;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  border: 1px solid #c0c0c0;
+  transition: 0.2s;
+}
+
+.login input[type="text"]:hover,
+.login input[type="password"]:hover {
+  border-color: #f44336;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.login input[type="submit"] {
+  border: none;
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+  margin: 20px 0px;
+}
+
+
+
+.login input[type="submit"]:disabled {
+  background: #ccc; 
+  color: #666;
+  cursor: not-allowed;
+}
+
+.login h2 {
+  margin: 20px 0 0;
+  color: #4caf50;
+  font-size: 28px;
+}
+
+.login p {
+  margin-bottom: 40px;
+}
+
+
+.links {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+  align-content: center;
+}
+
+.links a {
+  display: table-cell;
+  padding-top: 10px;
+}
+
+
+.login h2,
+.login p,
+.login a {
+  text-align: center;
+}
+
+.login a {
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.login a:visited {
+  color: inherit;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
